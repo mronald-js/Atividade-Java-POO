@@ -5,9 +5,9 @@
 <h2>Autor - discente: Marcello Ronald</h2>
 <h3> Resumo </h3>
 <p>
-    # Atividade desenvolvida a partir de um diagrama de classes que visa
-    # a prática de associação, herança e polimorfismo numa dada aplicação Java
-    # a aplicação simula uma dada pessoa realizando um ato de compra
+    Atividade desenvolvida a partir de um diagrama de classes que visa
+    a prática de associação, herança e polimorfismo numa dada aplicação Java
+    a aplicação simula uma dada pessoa realizando um ato de compra
 </p>
 <h3> Descrição </h3>
 <p> 
@@ -31,7 +31,8 @@ A Classe pessoa deve poder realizar um pedido, esse pedido possui um item e este
 </p>
 <h3>Classe Pessoa</h3>
 #Atributos
-```java
+```
+java
     private String nome;
     private int idade;
     private String sexo;
@@ -40,6 +41,7 @@ A Classe pessoa deve poder realizar um pedido, esse pedido possui um item e este
     private String endereco;
     private double saldo;
     private Produto pedidos[] = new Produto[10];
+    
 ```
 <p>
     Esses atributos são comuns a todas as classes filhas, sendo que a classe pessoa é abstrata e não pode ser instanciada diretamente<br>
