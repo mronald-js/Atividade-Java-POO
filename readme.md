@@ -147,6 +147,38 @@ public PessoaFisica(String nome, int idade, String sexo, String nacionalidade, S
 ```
 
 <h2 id="logistica">Pacote - Logistica</h2>
+<p>
+    <ul>
+        <li>Classe - Produto</li>
+        <li>Classe - Item</li>
+    </ul>
+</p>
+<h2>Item</h2>
+<p>
+    A classe de item descreve um item génerico, que é gerado a partir de um ID único.
+    
+    public class Item {
+    private int id;
+    
+    public Item(int id) {
+        this.id = id;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+    public Produto produto = new Produto("Produto", 0.0, 0);
+    }
+    ```
+    
+    A classe é relativamente simples, ela tem um atributo único que se caracteriza pelo ID do produto, e possui uma associação de produto que é também uma classe<br>
+    Cada vez que um Item é instanciado ele automaticamente cria uma intância de Produto, e alguns valores padrões são passados como padrão.
+</p>
+<h2>Produto</h2>
 
 
 
