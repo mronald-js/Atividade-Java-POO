@@ -303,9 +303,9 @@ Se nenhum dos casos é atendito ele exibe a mensagem: "Produto esgotado! Ou sald
 A cada iteração ele exibe a mensagem: "Nome sua compra de X pedidos foi realizada com sucesso! Saldo atual: X.X"
 E quando termina o laço ele exibe o preço total da compra.
 
-<h2 id="teste">Exemplo de Teste</h2>
+<h2 id="final">Exemplo de Teste</h2>
 <p align="center">
-  <img src="Assets/code1.png" width="780" title="exemplo de teste">
+  <img src="Assets/code1.png" width="1024" title="exemplo de teste">
   <img src="Assets/code2.png" width="780" title="exemplo de teste">
 </p>
 
