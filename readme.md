@@ -16,6 +16,9 @@ A partir de uma classe abstrata <b>PESSOA</b> duas classes filhas são criadas
 A Classe pessoa deve poder realizar um pedido, esse pedido possui um item e este item se refere à um produto
 </p>
 
+<h3>Diagrama</h3>
+![Diagrama](Assets/Diagrama.png)
+
 <h2>Tópicos</h2>
 <ol>
     <li><a href="#cliente">Pacote - Cliente</a></li>
