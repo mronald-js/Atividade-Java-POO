@@ -99,6 +99,7 @@ public class Pessoa {
         if(quantidade <= item.produto.getQuantidade()){
             System.out.println("Pedido realizado com sucesso!");
             pedidos[quantidadeP] = item.produto;
+            pedidos[quantidadeP].setQuantidade(quantidade);
             quantidadeP++;
         }else {
             System.out.println("\n");
@@ -107,17 +108,20 @@ public class Pessoa {
     }
 
     public void efetuarCompra(Produto pedidos[]){
+        int custoTotal = 0;
         if(pedidos.length > 0){
             for(int i = 0; i < quantidadeP; i++){
-                if(pedidos[i].getQuantidade() > 0){
-                    saldo -= pedidos[i].getPreco();
-                    pedidos[i].setQuantidade(pedidos[i].getQuantidade() - 1);
+                if(pedidos[i].getQuantidade() > 0 && saldo >= pedidos[i].getQuantidade() * pedidos[i].getPreco()){
+                    saldo -= pedidos[i].getPreco() * pedidos[i].getQuantidade();
+                    System.out.println(nome + ", sua compra de " + pedidos[i].getQuantidade() + " " + pedidos[i].getNome() +  " foi realizada com sucesso!\nSaldo atual: " + saldo);
+                    custoTotal += pedidos[i].getPreco() * pedidos[i].getQuantidade();
+                    pedidos[i].setQuantidade(0);
                 }else{
-                    System.out.println("Produto esgotado!");
+                    System.out.println("Produto esgotado! Ou saldo Insuficiente");
                     return;
                 }
-                System.out.println(nome + ", sua compra de foi realizada com sucesso!\nSaldo atual: " + saldo + "\n");
             }
+            System.out.println("Custo total: R$ " + custoTotal);
         }else{
             System.out.println("Nenhum pedido realizado!");
         }
