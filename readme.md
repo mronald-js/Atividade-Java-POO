@@ -17,7 +17,9 @@ A Classe pessoa deve poder realizar um pedido, esse pedido possui um item e este
 </p>
 
 <h3>Diagrama</h3>
-![Diagrama](Assets/Diagrama.png)
+<p align="center">
+  <img src="Assets/Diagrama.png" width="780" title="Diagrama">
+</p>
 
 <h2>Tópicos</h2>
 <ol>
